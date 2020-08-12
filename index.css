@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1FDEF;
+}
+
+main {
+    /* border: 2px solid yellow; */
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px 1px rgb(165, 162, 162);
+}
+
+/* */
+.apphead {
+    /* padding: 50px 0; */
+    padding: 40px;
+    background: #7eb179;
+}
+
+.apphead h1 {
+    padding-bottom: 20px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.apphead input {
+    border: none;
+    padding: 15px 20px;
+    flex-grow: 3;
+    outline: none;
+}
+
+.apphead button {
+    padding: 10px 10px;
+    flex-grow: 1;
+    border: none;
+    /* outline: none; */
+}
+
+.inputdiv {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.tasks {
+    background: rgb(184, 178, 178);
+
+}
+
+.inputboth {
+    padding: 40px 20px;
+    border: 1px solid pink;
+    margin: 0 auto;
+    width: 70%;
+}
+
+li {
+    position: relative;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    list-style: none;
+    padding: 15px 35px;
+    border: 1px solid #eee;
+    background-color: #e4e3e3;
+}
+li:checked{
+color: red;
+}
+
+li::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: seagreen;
+}
